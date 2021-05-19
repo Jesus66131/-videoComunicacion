@@ -16,6 +16,7 @@ public class VideoComunicacion {
     private static Integer tiempo;
     private static String nivel;
     private static int estrellas;
+    
 
     public VideoComunicacion(String nombre, int cantUsuarios, Integer tiempo, String nivel, int estrellas) {
         VideoComunicacion.nombre = nombre;
@@ -33,7 +34,14 @@ public class VideoComunicacion {
     
     public static void main(String[] args) {
           VideoComunicacion prueba = new   VideoComunicacion("Zoom", 38, 20, "Libre", 4);
-          System.out.println(calidad());
+          
+          System.out.println("Nombre:"+ nombre);
+          System.out.println("Numero de usuarios: "+cantUsuarios);
+          System.out.println("Tiempo: "+tiempo);
+          System.out.println("Nivel: "+nivel);
+          System.out.println("Estrellas: "+ estrellas);
+          System.out.println("Calidad: "+calidad());
+          
     }
     
 }
